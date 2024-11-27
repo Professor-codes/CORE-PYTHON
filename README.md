@@ -42,19 +42,11 @@ cursor = connection.cursor()
 
 ~ execute query
 ```bash
-cursor.execute(
-'''
- CREATE TABLE IF NOT EXISTS user (
- id INT PRIMARY KEY,
- name VARCHAR(10)
- )
-'''
-)
-
+cursor.execute("show databases")
 ```
 
 ~ insert data
 ```bash
-cursor.execute(
-"INSERT INTO user (id, name) VALUES (%s, %s)", (101, 'Alice'))
+for i in cursor:
+    print(i)
 ```
