@@ -45,7 +45,7 @@ cursor = connection.cursor()
 cursor.execute("show databases")
 ```
 
-~ insert data
+~ print data
 ```bash
 for i in cursor:
     print(i)
