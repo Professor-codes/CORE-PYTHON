@@ -14,4 +14,3 @@ if my_tuple:
     print("Mean:", mean)
 else:
     print("Tuple is empty.")
-
